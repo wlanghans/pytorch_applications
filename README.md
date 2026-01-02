@@ -1,6 +1,6 @@
 # PyTorch Applications
 
-A collection of PyTorch-based applications demonstrating advanced techniques for dynamical systems simulation and optimization.
+PyTorch-based applications motivated by real-world problems in dynamical systems simulation and optimization.
 
 ## Project Structure
 
