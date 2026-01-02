@@ -10,7 +10,7 @@ pytorch_applications/
 ├── requirements.txt
 └── lorenz/
     ├── lorenz_ekf.ipynb
-    └── optimize_lorenz copy.ipynb
+    └── optimize_lorenz.ipynb
 ```
 
 ## Folder Overview
@@ -18,7 +18,7 @@ pytorch_applications/
 ### `lorenz/`
 This folder contains Jupyter notebooks focused on the Lorenz dynamical system, a classic non-linear system that exhibits chaotic behavior. The notebooks demonstrate different applications of PyTorch for scientific computing:
 
-#### **lorenz_ekf.ipynb**
+#### **[lorenz_ekf.ipynb](lorenz/lorenz_ekf.ipynb)**
 State estimation for the Lorenz system using an Extended Kalman Filter (EKF).
 
 **PyTorch Usage:**
@@ -32,8 +32,8 @@ State estimation for the Lorenz system using an Extended Kalman Filter (EKF).
 - Automatic differentiation for Jacobian computation
 - Handling noisy observations in chaotic systems
 
-#### **optimize_lorenz copy.ipynb**
-Parameter optimization for the Lorenz system using gradient-based methods.
+#### **[optimize_lorenz.ipynb](lorenz/optimize_lorenz.ipynb)**
+Parameter optimization for the Lorenz system using backpropagation in time for gradient-based methods.
 
 **PyTorch Usage:**
 - Uses PyTorch's autograd to compute gradients of the loss function with respect to system parameters
@@ -41,7 +41,7 @@ Parameter optimization for the Lorenz system using gradient-based methods.
 - Demonstrates iterative parameter tuning through gradient descent
 
 **Key Topics:**
-- Parameter optimization using backpropagation
+- Parameter optimization using backpropagation in time
 - Loss function design for trajectory matching
 - Gradient-based optimization algorithms
 - Comparison of different optimization approaches for dynamical systems
@@ -63,7 +63,7 @@ Parameter optimization for the Lorenz system using gradient-based methods.
 2. **Create a virtual environment** (recommended):
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate
    ```
 
 3. **Install dependencies**:
@@ -71,24 +71,6 @@ Parameter optimization for the Lorenz system using gradient-based methods.
    pip install -r requirements.txt
    ```
 
-### Dependencies
-
-The project uses the following Python packages:
-- **torch** (2.9.0) - PyTorch framework for machine learning and numerical computing
-- **torchvision** (0.24.0) - Computer vision utilities (may be used for visualization support)
-- **matplotlib** (3.10.8) - Plotting and visualization library
-- **jupyter** (1.1.1) - Jupyter Notebook environment for interactive development
-
-## Usage
-
-To run the notebooks, start Jupyter:
-
-```bash
-jupyter notebook
-```
-
-Then navigate to the `lorenz/` folder and open either notebook to explore the implementations.
-
 ## License
 
-This project is provided as-is for educational and research purposes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
